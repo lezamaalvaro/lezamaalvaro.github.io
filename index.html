@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alvaro Lezama · Apps</title>
+<meta name="description" content="Juegos y apps de Alvaro Lezama. Games and apps by Alvaro Lezama.">
+<link rel="icon" href="fusio2048/icon.png">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+  <header>
+    <span class="brand">Alvaro Lezama</span>
+    <nav class="lang" aria-label="Idioma / Language">
+      <button data-set="es">ES</button><button data-set="en">EN</button>
+    </nav>
+  </header>
+
+  <h1 data-lang="es">Mis apps</h1>
+  <h1 data-lang="en">My apps</h1>
+  <p class="muted" data-lang="es">Juegos y apps hechos por un desarrollador independiente. Sin anuncios.</p>
+  <p class="muted" data-lang="en">Games and apps made by an independent developer. No ads.</p>
+
+  <!-- One <a class="app"> per app; new apps go in their own folder. -->
+  <div class="apps">
+    <a class="app" href="fusio2048/">
+      <img src="fusio2048/icon.png" alt="" width="64" height="64">
+      <span>
+        <strong>Fusio 2048</strong>
+        <span data-lang="es">Fusiona números a tu ritmo, con reto diario.</span>
+        <span data-lang="en">Merge numbers at your own pace, with a daily challenge.</span>
+      </span>
+    </a>
+  </div>
+
+  <footer>
+    <a href="mailto:alvarolezamaapps@gmail.com">alvarolezamaapps@gmail.com</a>
+  </footer>
+</main>
+<script src="idioma.js"></script>
+</body>
+</html>

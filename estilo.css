@@ -1,0 +1,62 @@
+:root {
+  --bg: #FFF7F1;
+  --card: #FFFFFF;
+  --text: #2A2233;
+  --muted: #6B6178;
+  --accent: #6E30A8;
+  --line: #EADFE8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17131D;
+    --card: #221C2B;
+    --text: #F1ECF5;
+    --muted: #A99FB5;
+    --accent: #C9A4F0;
+    --line: #342B40;
+  }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 20px 16px 48px; }
+a { color: var(--accent); }
+
+header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px;
+         color: var(--text); text-decoration: none; }
+.brand img { border-radius: 10px; }
+
+.lang { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.lang button { border: 0; background: transparent; color: var(--muted); padding: 6px 14px;
+               font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+
+article { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 8px 24px 20px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 18px 0 4px; }
+h2 { font-size: 20px; margin: 26px 0 6px; }
+.muted { color: var(--muted); margin-top: 0; font-size: 15px; }
+.lead { font-size: 19px; }
+li { margin: 6px 0; }
+
+.home .hero { text-align: center; padding: 32px 0 40px; }
+.big-icon { border-radius: 32px; box-shadow: 0 12px 30px rgba(110, 48, 168, .25); }
+.home h1 { font-size: 40px; margin-top: 20px; }
+.soon { display: inline-block; margin-top: 8px; padding: 10px 22px; border-radius: 999px;
+        background: var(--accent); color: var(--bg); font-weight: 700; }
+footer { text-align: center; color: var(--muted); font-size: 15px; }
+footer a { margin: 0 4px; }
+[hidden] { display: none !important; }
+
+.apps { display: grid; gap: 12px; margin: 24px 0 36px; }
+.app { display: flex; align-items: center; gap: 16px; padding: 16px; border-radius: 18px;
+       background: var(--card); border: 1px solid var(--line); color: var(--text); text-decoration: none; }
+.app:hover { border-color: var(--accent); }
+.app img { border-radius: 14px; flex: none; }
+.app strong { display: block; font-size: 19px; }
+.app span span { color: var(--muted); font-size: 15px; }
